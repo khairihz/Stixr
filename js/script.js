@@ -45,7 +45,6 @@
   const widget = document.getElementById('audio-widget');
   const embedEl = document.getElementById('spotify-embed');
   let spotifyController = null;
-  let pendingPlay = false;
 
   const setMuted = (muted) => {
     widget.classList.toggle('is-muted', muted);
@@ -63,19 +62,22 @@
         EmbedController.addListener('playback_update', (e) => {
           setMuted(e.data.isPaused);
         });
-        if (pendingPlay) {
-          pendingPlay = false;
-          EmbedController.play();
-        }
+        EmbedController.play();
       });
     };
 
     widget.addEventListener('click', () => {
-      if (!spotifyController) {
-        pendingPlay = true;
-        return;
-      }
+      if (!spotifyController) return;
       spotifyController.togglePlay();
     });
+
+    // Browsers block audio with sound until the visitor interacts with the
+    // page, so start the track on their first click/tap/keypress anywhere.
+    const startOnFirstInteraction = (e) => {
+      if (widget.contains(e.target) || !spotifyController) return;
+      spotifyController.play();
+    };
+    document.addEventListener('pointerdown', startOnFirstInteraction, { once: true, passive: true });
+    document.addEventListener('keydown', startOnFirstInteraction, { once: true, passive: true });
   }
 })();
