@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stixr — Coming Soon</title>
+  <meta name="description"
+    content="STIXR — DJ &amp; Music Producer. Progressive Afro House blending East and West. Coming soon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/webp" href="assets/stixr-favicon.webp">
+</head>
+
+<body>
+  <div class="page">
+
+    <div class="cursor-spot" id="cursor-spot"></div>
+
+    <div class="watermark">
+      <img src="assets/Union.svg" alt="">
+    </div>
+
+    <div class="photo">
+      <div class="photo-bg"></div>
+      <div class="photo-fade"></div>
+    </div>
+
+    <header class="navbar">
+      <div class="navbar-logo">
+        <img src="assets/Union.svg" alt="STIXR">
+      </div>
+
+      <div class="navbar-call">
+        <span>Call Us — +1 (310) 710-0703</span>
+      </div>
+
+      <a href="mailto:djstixr@gmail.com" class="navbar-mail" id="mail-link">
+        <span class="ripple" id="mail-ripple"></span>
+        <span class="shimmer"></span>
+        <span class="navbar-mail-text">BOOKING — djstixr@gmail.com</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </a>
+
+      <button class="burger" id="burger-btn" type="button" aria-label="Open menu" aria-expanded="false"
+        aria-controls="mobile-drawer">
+        <span class="burger-line burger-line1"></span>
+        <span class="burger-line burger-line2"></span>
+        <span class="burger-line burger-line3"></span>
+      </button>
+    </header>
+
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="drawer-call">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8 19.79 19.79 0 01.07 2.18 2 2 0 012.06 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+            stroke="#20222C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <span>+1 (310) 710-0703</span>
+      </div>
+
+      <a href="mailto:djstixr@gmail.com" class="drawer-mail">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#fff"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <polyline points="22,6 12,13 2,6" stroke="#fff" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round"></polyline>
+        </svg>
+        <span>djstixr@gmail.com</span>
+      </a>
+
+      <div class="drawer-social">
+        <a href="https://open.spotify.com/artist/45Der77ht1kNEETNJVqMwL?si=iSBUQKyOQTmwqCH6-SOsSQ" target="_blank"
+          rel="noopener" class="social-btn" aria-label="Spotify">
+          <img src="assets/spotify-icon.svg" alt="">
+        </a>
+        <a href="https://soundcloud.com/stixr-434992760?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+          target="_blank" rel="noopener" class="social-btn" aria-label="SoundCloud">
+          <img src="assets/soundcloud-icon.svg" alt="" class="icon-soundcloud">
+        </a>
+        <a href="https://www.youtube.com/@STIXR" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube">
+          <img src="assets/youtube-icon.svg" alt="">
+        </a>
+        <a href="https://www.instagram.com/stixrmusic/" target="_blank" rel="noopener" class="social-btn"
+          aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#20222C">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z">
+            </path>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@stixrmusic" target="_blank" rel="noopener" class="social-btn"
+          aria-label="TikTok">
+          <svg width="15" height="19" viewBox="0 0 41 48">
+            <path
+              d="M 30.145 0 L 22.056 0 L 22.056 32.696 C 22.056 36.591 18.944 39.791 15.073 39.791 C 11.201 39.791 8.089 36.591 8.089 32.696 C 8.089 28.87 11.132 25.739 14.865 25.6 L 14.865 17.391 C 6.637 17.53 0 24.278 0 32.696 C 0 41.183 6.776 48 15.142 48 C 23.508 48 30.283 41.113 30.283 32.696 L 30.283 15.93 C 33.325 18.157 37.059 19.478 41 19.548 L 41 11.339 C 34.916 11.13 30.145 6.122 30.145 0 Z"
+              fill="#20222C"></path>
+          </svg>
+        </a>
+        <a href="https://music.apple.com/us/artist/stixr/1811539160" target="_blank" rel="noopener" class="social-btn"
+          aria-label="Apple Music">
+          <img src="assets/applemusic-icon.svg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="heading-wrap">
+        <div class="heading-stack">
+          <h1 class="heading">COMING SOON</h1>
+          <h1 class="heading heading-glitch heading-glitch-a" aria-hidden="true">COMING SOON</h1>
+          <h1 class="heading heading-glitch heading-glitch-b" aria-hidden="true">COMING SOON</h1>
+        </div>
+      </div>
+
+      <p class="subtitle">DJ &amp; Music Producer</p>
+
+      <p class="description">Blending the worlds of East and West, STIXR brings Progressive Afro House to you from all
+        over the world. Blending Afro House with Melodic House, Tech House and Indie Dance, Stixr will keep you moving
+        at any event.</p>
+
+      <div class="social-row">
+        <a href="https://open.spotify.com/artist/45Der77ht1kNEETNJVqMwL?si=iSBUQKyOQTmwqCH6-SOsSQ" target="_blank"
+          rel="noopener" class="social-btn" aria-label="Spotify">
+          <img src="assets/spotify-icon.svg" alt="">
+        </a>
+        <a href="https://soundcloud.com/stixr-434992760?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+          target="_blank" rel="noopener" class="social-btn" aria-label="SoundCloud">
+          <img src="assets/soundcloud-icon.svg" alt="" class="icon-soundcloud">
+        </a>
+        <a href="https://www.youtube.com/@STIXR" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube">
+          <img src="assets/youtube-icon.svg" alt="">
+        </a>
+        <a href="https://www.instagram.com/stixrmusic/" target="_blank" rel="noopener" class="social-btn"
+          aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#20222C">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z">
+            </path>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@stixrmusic" target="_blank" rel="noopener" class="social-btn"
+          aria-label="TikTok">
+          <svg width="16" height="20" viewBox="0 0 41 48">
+            <path
+              d="M 30.145 0 L 22.056 0 L 22.056 32.696 C 22.056 36.591 18.944 39.791 15.073 39.791 C 11.201 39.791 8.089 36.591 8.089 32.696 C 8.089 28.87 11.132 25.739 14.865 25.6 L 14.865 17.391 C 6.637 17.53 0 24.278 0 32.696 C 0 41.183 6.776 48 15.142 48 C 23.508 48 30.283 41.113 30.283 32.696 L 30.283 15.93 C 33.325 18.157 37.059 19.478 41 19.548 L 41 11.339 C 34.916 11.13 30.145 6.122 30.145 0 Z"
+              fill="#20222C"></path>
+          </svg>
+        </a>
+        <a href="https://music.apple.com/us/artist/stixr/1811539160" target="_blank" rel="noopener" class="social-btn"
+          aria-label="Apple Music">
+          <img src="assets/applemusic-icon.svg" alt="">
+        </a>
+      </div>
+    </main>
+
+    <button class="audio-widget" id="audio-widget" type="button" aria-label="Toggle background music"
+      aria-pressed="false">
+      <span class="tooltip tooltip-on">Sound On — Click to Mute</span>
+      <span class="tooltip tooltip-off">Sound Off — Click to Unmute</span>
+      <span class="bars">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+        <span class="bar bar4"></span>
+        <span class="bar bar5"></span>
+        <span class="bar bar6"></span>
+        <span class="bar bar7"></span>
+      </span>
+      <svg class="mute-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M11 5L6 9H2v6h4l5 4V5z" fill="rgba(0,0,0,0.55)"></path>
+        <line x1="23" y1="9" x2="17" y2="15" stroke="rgba(0,0,0,0.55)" stroke-width="2" stroke-linecap="round"></line>
+        <line x1="17" y1="9" x2="23" y2="15" stroke="rgba(0,0,0,0.55)" stroke-width="2" stroke-linecap="round"></line>
+      </svg>
+    </button>
+
+    <div id="spotify-embed" class="spotify-embed-hidden" aria-hidden="true"></div>
+
+  </div>
+  <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
