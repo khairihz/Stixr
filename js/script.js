@@ -33,6 +33,20 @@
     });
   }
 
+  const epkLink = document.getElementById('epk-link');
+  const epkRipple = document.getElementById('epk-ripple');
+  if (epkLink && epkRipple) {
+    epkLink.addEventListener('mouseenter', (e) => {
+      const rect = epkLink.getBoundingClientRect();
+      epkRipple.style.left = `${e.clientX - rect.left - 15}px`;
+      epkRipple.style.top = `${e.clientY - rect.top - 15}px`;
+      epkLink.classList.add('is-active');
+    });
+    epkLink.addEventListener('mouseleave', () => {
+      epkLink.classList.remove('is-active');
+    });
+  }
+
   const burgerBtn = document.getElementById('burger-btn');
   const page = document.querySelector('.page');
   if (burgerBtn && page) {
